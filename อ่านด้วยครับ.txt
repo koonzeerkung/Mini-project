@@ -1,0 +1,14 @@
+คือใน github ไม่สามารถสร้างfolder ผมจึงใส่codeสำหรับสร้างโฟล์เดอร์ไปเพิ่มแล้วในคลิปผมยังไม่ได้อธิบายไว้ 
+ขออภัยไว้ ณ ที่นี้ครับ
+code ที่สร้างโฟล์เดอร์
+
+import os
+import shutil
+def createFolder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print ('Error: Creating directory. ' +  directory)
+
+createFolder('./A/')
